@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于wog_bh科技 </title>
+    <link rel="shortcut icon" href="关于.png">
+    <style>
+        *{
+            text-align: center;
+        }
+        a{
+            color: #545454;
+        }
+        body{
+            height:90%;
+            background-color: #f9f9f9;
+        }
+        hr{
+            color: #ccc;
+            width: 95%;
+        }
+        .top{
+            margin: auto;
+            width: 97%;
+            border: 1.5px solid #dadada;
+            border-radius : 5px;
+        }
+        .logo{
+            max-height: 100px;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 20px;
+            color: #545454;
+        }
+        .introduction{
+            font-size: 15px;
+            color: #545454;
+        }
+        .product{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap ;
+        }
+        .divlink{
+            margin-top: 10px;
+            border: 1.5px solid #ccc;
+            border-radius: 16px;
+        }
+        .divlink > img{
+            aspect-ratio : 1/1;
+            width: 42vw;
+            min-width: 100px;
+            max-width: 300px;
+            border-bottom: 1.5px solid #ccc;
+        }
+    </style>
+<body>
+    <div class="header">
+        <div class="top">
+            <img class="logo" src="关于.png">
+        </div>
+    </div>
+    <hr>
+    <p class="title">成立信息</p>
+<p>你好啊</p>
+<p>1.我们(wog_hb工具网站)成立于2022.3.21(东航空难当天)</p>
+网站已安全运行：<span id="htmer_time" style="color: red;"></span>
+<script>
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }</script><script type="text/javascript" language="javascript">
+    function setTime() {
+        var create_time = Math.round(new Date(Date.UTC(2022, 03, 20, 0, 55, 30)).getTime() / 1000);
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+                + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }    setInterval(setTime, 1000);
+    </script> 
+    <hr>
+    <p class="title">我们的初衷</p>
+<p>我们的初衷是让大家可以更方便的使用计数机</p>
+<p>当然我们的初衷远不止这些</p>
+<p>还有：让大家更方便的干以下事情</p>
+<p>这样就不用到处在互联网上找了</p>
+<p>毕竟作者也亲身体验过一搜全是广告</p>
+<p>我相信很多人都是想P图整一个流浪地球同款的入住证的</p>
+<p>但是不知道怎么P图</p>
+<p>我们就可以解决这个问题</p>
+<p>只需要按照指示来就行了</p>
+<hr>
+<p class="title">关于作者</p>
+<p>作者是一个飞行爱好者</p>
+<p>但是我在20年开始自学编程</p>
+<p>直到现在我学会了很多语言 python(一点点) HTML CSS JS 易语言 C C++</p>
+<p>在这里我想说编程其实很简单只是我们内心有一种对未知事物的恐惧心理</p>
+<p>因为当时作者也是和你们一样的总是害怕学不会</p>
+<p>于是我就坚持几天就放弃了</p>
+<p>最后有一位大佬在他的视频了的一句话引导了我</p>
+<p>他的教程真的很有用因为他的教程是真的为纯新手录制的</p>
+<p>当在浏览器里跳出第一行文字时</p>
+<p>当时我沉浸在成功的喜悦里，正是因为喜悦才让我学会编程</p>
+<p>喜悦可以推动一个人持续学习正是因为喜悦才能让我们努力</p>
+<p>因为有了第一次的喜悦就想要以后无数次的喜悦</p>
+<p>所以单在这看教程不妨去写写看</p>
+<p>他就是康文昌</p>
+<hr>
+<p>联系我们</p>
+<p>邮箱:3191459073@qq.com</p>
+<hr>
+</body>
